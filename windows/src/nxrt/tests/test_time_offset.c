@@ -1,4 +1,4 @@
-/* The time offset (this mod, not upstream): the game's clock is the host's clock shifted, without touching Windows'.
+/* The time offset: the game's clock is the host's clock shifted, without touching Windows'.
    No game data, no window: the HLE adapters are called the way test_adapters.c calls them.
 
    What must hold:

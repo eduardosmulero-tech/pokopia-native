@@ -18,7 +18,7 @@ static int64_t fixed_time(void) {
     return v;
 }
 
-// ---- time offset (mod, not upstream): what the game believes "now" is, shifted, without touching the host's clock ----
+// ---- time offset: what the game believes "now" is, shifted, without touching the host's clock ----
 // DM_TIME_OFFSET=<seconds> or DM_TIME_OFFSET_DAYS=<days> at start; F9 / F8 move it +1 / -1 day while playing and F10 puts it back
 // to zero. The value persists in %LOCALAPPDATA%\Pokopia Native\time-offset.txt, so it survives a restart until F10 (or deleting the
 // file). It is added on the read side only (now(), the C library clock), so calendar -> epoch stays the identity on the game's own
